@@ -45,7 +45,7 @@ function onImgClick(event) {
   modal.show();
   document.addEventListener('keydown', onEscapeClick);
   function onEscapeClick(event) {
-    if (event.key === 'Escape') {
+    if (event.code === 'Escape') {
       modal.close();
       document.removeEventListener('keydown', onEscapeClick);
     }
