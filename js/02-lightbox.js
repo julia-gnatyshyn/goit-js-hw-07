@@ -8,9 +8,9 @@ gallery.innerHTML = markUp;
 function galleryMarkUp(items) {
   return items
     .map(({ preview, original, description }) => {
-      return `<a class="gallery__item" href="${original}">
+      return `<li><a class="gallery__item" href="${original}">
   <img class="gallery__image" src="${preview}" alt="${description}" />
-</a>`;
+</a></li>`;
     })
     .join('');
 }
